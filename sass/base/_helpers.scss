@@ -1,0 +1,17 @@
+/* ==========================================================================
+   CSS helper classes
+   ========================================================================== */
+
+/* Hide element but make it readable for screen readers */
+
+.h-hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* Make serif text */
+
+.h-serif-text {
+  font-family: $serif-font-stack;
+}

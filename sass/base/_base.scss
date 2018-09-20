@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Basic styles
+   ========================================================================== */
+
+/* Basic styles for document's body */
+
+body {
+  background-color: $background-color;
+}
+
+/* Remove browsers' margins for basic tags */
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+/* Basic styles for lists */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Responsive images */
+
+img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Sass variables
+   ========================================================================== */
+
+/* Fonts
+   ========================================================================== */
+
+/**
+ * Regular font family
+ *
+ * @type List
+ */
+
+$text-font-stack: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+
+/**
+ * Serif font family
+ *
+ * @type List
+ */
+
+ $serif-font-stack: 'Libre Baskerville', 'Times New Roman', Times, serif;
+
+/**
+ * Heading's font family
+ *
+ * @type String
+ */
+
+$heading-font-stack: 'Oswald';
+
+/* Colors
+   ========================================================================== */
+
+/**
+ * Black
+ *
+ * @type Color
+ */
+
+$black: hsl(0, 0%, 16%);
+
+/**
+ * Grey
+ *
+ * @type Color
+ */
+
+ $grey: hsl(0, 0%, 94%);
+
+ /**
+  * Light grey
+  *
+  * @type Color
+  */
+ 
+ $light-grey: hsl(0, 0%, 97%);
+
+/**
+* White
+*
+* @type Color
+*/
+
+$white: hsl(0, 0%, 100%);
+
+/**
+ * Yellow
+ *
+ * @type Color
+ */
+
+$yellow: hsl(45, 89%, 57%);
+
+/**
+ * Yellow
+ *
+ * @type Color
+ */
+
+$light-yellow: hsl(49, 84%, 66%);
+
+/**
+ * Background color
+ *
+ * @type Color
+ */
+
+$background-color: $white;
+
+/**
+ * Text color
+ *
+ * @type Color
+ */
+
+$text-color: $black;
+
+/**
+ * Primary color
+ *
+ * @type Color
+ */
+
+$primary-color: $yellow;
+
+/* Spacing
+   ========================================================================== */
+
+/**
+ * Container's maximum width
+ *
+ * @type Length
+ */
+
+$max-width: 1200px;
+
+/**
+ * Space system
+ *
+ * @type Length
+ */
+
+$space-s: $space-m / 2;
+$space-m: 20px;
+$space-l: $space-m / 2;
+$space-xl: $space-l / 2;
+$space-xxl: $space-xl / 2;
+
+/**
+ * Breakpoints map
+ *
+ * @prop {String} keys - Keys are identifiers mapped to a given length
+ * @prop {Map} values - Values are actual breakpoints expressed in pixels
+ */
+
+$breakpoints: (
+  'small': (min-width: 576px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 992px),
+  'huge': (min-width: 1200px),
+);
