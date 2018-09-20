@@ -19,7 +19,7 @@ $text-font-stack: 'Raleway', 'Arial', 'Helvetica', sans-serif;
  * @type List
  */
 
- $serif-font-stack: 'Libre Baskerville', 'Times New Roman', Times, serif;
+$serif-font-stack: 'Libre Baskerville', 'Times New Roman', Times, serif;
 
 /**
  * Heading's font family
@@ -121,11 +121,11 @@ $max-width: 1200px;
  * @type Length
  */
 
-$space-s: $space-m / 2;
 $space-m: 20px;
-$space-l: $space-m / 2;
-$space-xl: $space-l / 2;
-$space-xxl: $space-xl / 2;
+$space-s: $space-m / 2;
+$space-l: $space-m * 2;
+$space-xl: $space-l * 2;
+$space-xxl: $space-xl * 2;
 
 /**
  * Breakpoints map
