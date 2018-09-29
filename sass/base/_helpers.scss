@@ -2,6 +2,9 @@
    CSS helper classes
    ========================================================================== */
 
+/* Displaying
+   ========================================================================== */
+
 /* Hide element but make it readable for screen readers */
 
 .h-hide {
@@ -10,8 +13,106 @@
   left: -9999px !important;
 }
 
-/* Make serif text */
+/* Display an element as inline-block on at least large screens */
 
-.h-serif-text {
-  font-family: $serif-font-stack;
+.h-inline-block-l {
+  @include respond-to(large) {
+    display: inline-block;
+  }
+}
+
+/* Text helpers
+   ========================================================================== */
+
+/* Make light text */
+
+.h-light-text {
+  font-weight: 400;
+}
+
+/* Primary color text */
+
+.h-main-color-text {
+  color: $primary-color;
+}
+
+/* Secondary color text */
+
+.h-secondary-color-text {
+  color: $secondary-color;
+}
+
+/* Margins
+   ========================================================================== */
+
+/* Set margin-left equal 100px for an element displayed on at least large screens */
+
+.h-margin-left-100-l {
+  @include respond-to(large) {
+    margin-left: 100px;
+  }
+}
+
+/* Backgrounds
+   ========================================================================== */
+
+/* White background color */
+
+.h-white-bg {
+  background-color: $white;
+}
+
+/* Links
+   ========================================================================== */
+
+/* Highlight an link */
+
+.h-highlight-link {
+  position: relative;
+  z-index: 0;
+
+  font-family: $heading-font-stack;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: $primary-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 13px);
+    left: -$space-m;
+    z-index: -1;
+    opacity: 0.3;
+
+    display: block;
+    width: calc(100% + #{$space-l});
+    height: 26px;
+    background-color: $secondary-color;
+    
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 400ms cubic-bezier(0.75, -0.5, 0, 1.75);
+  }
+
+  &:hover::after {
+    transform: scale(1, 1);
+  }
+
+  &--circle {
+    &::after {
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+      transform: scale(0, 0);
+      transform-origin: center;
+    }
+
+    &:hover::after {
+      transform: scale(1, 1);
+    }
+  }
 }

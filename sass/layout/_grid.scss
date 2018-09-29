@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Grid layout
+   ========================================================================== */
+
+/* Content container */
+
+.l-container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $space-l;
+  box-sizing: border-box;
+
+  @include respond-to(small) {
+    padding-right: $space-xl;
+    padding-left: $space-xl;
+  }
+
+  @include respond-to(medium) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @include respond-to(large) {
+    width: 100%;
+    padding-right: $space-xxl;
+    padding-left: $space-xxl;
+  }
+}
+
+/* Flex rows */
+
+.l-rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.l-row {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+
+  &--space-around {
+    justify-content: space-around;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+}
+
+.l-row-l {
+  @include respond-to(large) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  &--align-center {
+    @include respond-to(medium) {
+      align-items: center;
+    }
+  }
+}
+
+/* Flex columns */
+
+.l-column {
+  width: 100%;
+  box-sizing: border-box;
+
+  &--s-2 {
+    @include respond-to(small) {
+      width: 50%;
+    }
+  }
+
+  &--s-2-space {
+    @include respond-to(small) {
+      width: 50%;
+      padding-left: $space-xl;
+
+      &:nth-child(odd) {
+        padding-left: 0; 
+      }
+    }
+  }
+
+  &--s-2-auto {
+    @include respond-to(small) {
+      width: 100%;
+      max-width: calc(50% - #{$space-m});
+    }
+  }
+
+  &--m-2 {
+    @include respond-to(medium) {
+      width: 50%;
+    }
+  }
+
+  &--m-4 {
+    @include respond-to(medium) {
+      width: 25%;
+    }
+  }
+
+  &--l-2 {
+    @include respond-to(large) {
+      width: 50%;
+    }
+  }
+
+  &--l-2-space {
+    @include respond-to(large) {
+      width: calc(50% - (#{$space-l} * 2) / 2);
+    }
+  }
+
+  &--l-3-space {
+    @include respond-to(large) {
+      width: 33.33333333333333%;
+      padding-left: $space-xl;
+
+      &:nth-child(odd) {
+        padding-left: $space-xl; 
+      }
+
+      &:first-child,
+      &:nth-child(4n) {
+        padding-left: 0; 
+      }
+    }
+  }
+
+  &--l-auto {
+    @include respond-to(large) {
+      width: auto;
+    }
+  }
+}
+
+/* Section container */
+
+.l-section {
+  padding: $space-xl 0;
+  overflow-x: hidden;
+}
+
+/* Subsection container */
+
+.l-subsection {
+  margin-bottom: $space-xl;
+
+  &--with-top {
+    margin-top: $space-xl;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}

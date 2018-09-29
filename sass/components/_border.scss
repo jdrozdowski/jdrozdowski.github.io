@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Border around the page
+   ========================================================================== */
+
+.c-border {
+  display: none;
+
+  @include respond-to(medium) {
+    position: fixed;
+    display: block;
+    background-color: $white;
+  }
+
+  &--top,
+  &--bottom {
+    @include respond-to(medium) {
+      width: 100%;
+      height: $space-m;
+    }
+
+    @include respond-to(large) {
+      width: 100%;
+      height: $space-l;
+    }
+  }
+
+  &--right,
+  &--left {
+    @include respond-to(medium) {
+      width: $space-m;
+      height: 100vh;
+    }
+
+    @include respond-to(large) {
+      width: $space-l;
+      height: 100vh;
+    }
+  }
+
+  &--top {
+    @include respond-to(medium) {
+      top: 0;
+      z-index: 1000;
+    }
+  }
+
+  &--right {
+    @include respond-to(medium) {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &--bottom {
+    @include respond-to(medium) {
+      bottom: 0;
+    }
+  }
+
+  &--left {
+    @include respond-to(medium) {
+      top: 0;
+      left: 0;
+    }
+  }
+}

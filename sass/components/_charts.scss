@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Charts' css styles
+   ========================================================================== */
+
+.c-chart {
+  position: relative;
+  width: calc(100% - #{$space-m});
+  margin-bottom: $space-xl / 2;
+
+  @include respond-to(large) {
+    width: auto;
+    height: 160px;
+  }
+
+  &__labels {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    height: calc(100% - #{$space-l});
+
+    @include respond-to(large) {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+      margin-top: $space-l;
+      background-color: $grey;
+
+      @include respond-to(large) {
+        width: calc(100% - #{$space-l + $space-xl});
+        height: 1px;
+        margin-top: 0;
+        margin-left: $space-l + $space-xl;
+      }
+    }
+  }
+
+  &__label {
+    width: 25%;
+    text-align: right;
+
+    @include respond-to(large) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+
+      width: 100%;
+      height: 40px;
+      padding: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      margin-left: auto;
+      border-left: 2px dotted $grey;
+
+      @include respond-to(large) {
+        width: calc(100% - #{$space-l});
+        height: 1px;
+        margin-left: $space-l;
+        border-bottom: 2px dotted $grey;
+        border-left: none;
+      }
+    }
+
+    &__caption {
+      display: inline-block;
+      margin-bottom: $space-m;
+      transform: translateX(50%);
+
+      font-family: $heading-font-stack;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      line-height: 1;
+
+      @include respond-to(large) {
+        flex-shrink: 0;
+
+        width: 60px;
+        margin-bottom: 0;
+        transform: translateY(-50%);
+
+        line-height: 40px;
+      }
+    }
+  }
+
+  &__data {
+    display: block;
+    margin-top: $space-l;
+    padding: $space-l 0;
+
+    @include respond-to(large) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      height: 159px;
+      margin-top: 0;
+      margin-left: 100px;
+      padding-top: 0;
+      padding-left: 40px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__data-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: $space-l;
+
+    @include respond-to(large) {
+      flex-direction: column;
+      margin-right: 60px;
+      margin-bottom: 0;
+      height: 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 2px;
+      background-color: $secondary-color;
+
+      @include respond-to(large) {
+        position: absolute;
+
+        display: block;
+        width: 10px !important;
+        height: 10px;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+    }
+
+    &--basic::before {
+      width: 25%;
+
+      @include respond-to(large) {
+        top: 112px;
+      }
+    }
+
+    &--regular::before {
+      width: 50%;
+
+      @include respond-to(large) {
+        top: 72px;
+      }
+    }
+
+    &--advanced::before {
+      width: 75%;
+
+      @include respond-to(large) {
+        top: 32px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $secondary-color;
+      box-sizing: border-box;
+
+      @include respond-to(large) {
+        bottom: 0;
+        left: auto !important;
+
+        display: block;
+        width: 2px;
+        height: 75%;
+        border: none;
+        border-radius: 0;
+      }
+    }
+
+    &--basic::after {
+      left: calc(25% - 5px);
+
+      @include respond-to(large) {
+        height: 25%;
+      }
+    }
+
+    &--regular::after {
+      left: calc(50% - 5px);
+
+      @include respond-to(large) {
+        height: 50%;
+      }
+    }
+
+    &--advanced::after {
+      left: calc(75% - 5px);
+
+      @include respond-to(large) {
+        height: 75%;
+      }
+    }
+
+    &__caption {
+      position: relative;
+      left: 20px;
+      max-width: 50px;
+
+      font-family: $heading-font-stack;
+      font-weight: 500;
+      line-height: 1;
+
+      @include respond-to(large) {
+        left: 0;
+        transform: translateY(-100%);
+
+        max-width: 90px;
+        text-align: center;
+      }
+    }
+
+    &--basic &__caption {
+      @include respond-to(large) {
+        bottom: -100px;
+      }
+    }
+
+    &--regular &__caption {
+      @include respond-to(large) {
+        bottom: -60px;
+      }
+    }
+
+    &--advanced &__caption {
+      @include respond-to(large) {
+        bottom: -20px;
+      }
+    }
+  }
+}

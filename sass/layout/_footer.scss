@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Site footer
+   ========================================================================== */
+
+.c-footer {
+  position: relative;
+  z-index: 999;
+
+  padding-top: $space-m;
+  padding-bottom: $space-m;
+  
+  font-size: 0.875rem;
+  color: $dark-grey;
+  text-align: right;
+}

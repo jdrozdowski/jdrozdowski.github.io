@@ -1,0 +1,392 @@
+/* ==========================================================================
+   Specific styles for the index (home) page
+   ========================================================================== */
+
+/* Page header's styles
+   ========================================================================== */
+
+
+/*Positioning and dimensions */
+
+.l-header {
+  position: relative;
+  overflow-x: hidden;
+
+  height: 100vh;
+  margin-bottom: $space-m;
+  padding: $space-m 0;
+  box-sizing: border-box;
+
+  @include respond-to(small) {
+    margin-bottom: $space-xl;
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+  }
+
+  @include respond-to(huge) {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__intro {
+    margin-top: 10vh;
+    margin-left: auto;
+    text-align: right;
+    box-sizing: border-box;
+
+    @include respond-to(small) {
+      max-width: 50%;
+    }
+
+    @include respond-to(small) {
+      padding-left: $space-m;
+    }
+
+    @include respond-to(large) {
+      margin-top: 0;
+    }
+  }
+
+  &__intro-text {
+    font-weight: 400;
+    color: $white;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+    @include respond-to(medium) {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Background */
+
+.c-header {
+  background-color: $primary-color;
+
+  @include respond-to(small) {
+    background: linear-gradient(to right, $background-color 50%, $primary-color 50%);
+  }
+}
+
+/* Header's components styles */
+
+.l-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-left: $space-l;
+
+  @include respond-to(small) {
+    margin-left: $space-l;
+  }
+
+  @include respond-to(medium) {
+    position: absolute;
+    top: $space-m;
+    left: $space-l;
+    z-index: 998;
+
+    margin-left: 0;
+  }
+
+  @include respond-to(medium) {
+    top: $space-l;
+    left: $space-l * 2;
+  }
+}
+
+.c-page-title {
+  position: relative;
+
+  font-family: $title-font-stack;
+  font-size: 4.375rem;
+  font-weight: 900;
+  color: $secondary-color;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include respond-to(small) {
+    font-size: 5rem;
+  }
+
+  @include respond-to(medium) {
+    font-size: 5.5rem;
+  }
+
+  @include respond-to(large) {
+    font-size: 6rem;
+  }
+
+  @include respond-to(huge) {
+    font-size: 8.75rem;
+    margin-left: 0;
+  }
+}
+
+/* General sections' styles
+   ========================================================================== */
+
+.c-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: $space-l + $space-s;
+
+  font-family: $title-font-stack;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: $primary-color;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @include respond-to(large) {
+    font-size: 3rem;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(1em * 0.6);
+    left: -5%;
+    z-index: -1;
+
+    display: block;
+    width: 40%;
+    height: calc(1em / 2);
+    background-color: $secondary-color;
+    opacity: 0.3;
+  }
+}
+
+.c-date {
+  display: block;
+  margin-bottom: $space-m;
+  font-size: 1rem;
+  white-space: nowrap;
+
+  @include respond-to(large) {
+    margin-right: $space-l;
+  }
+}
+
+/* Specific section's styles
+   ========================================================================== */
+
+/* About section */
+
+.l-features {
+  justify-content: space-between;
+  max-width: 750px;
+  margin-top: $space-l;
+  margin-right: auto;
+  margin-bottom: $space-xl / 2;
+  margin-left: auto;
+  text-align: center;
+
+  .l-feature {
+    margin-bottom: $space-xl / 2;
+
+    @include respond-to(medium) {
+      max-width: 100px;
+    }
+
+    &__icon {
+      width: 100px;
+    }
+
+    &__caption {
+      font-family: $heading-font-stack;
+      font-size: 1.125rem;
+      line-height: 1;
+    }
+  }
+}
+
+/* Projects section */
+
+.l-project {
+  padding: $space-xl / 2 0 $space-l + $space-s 0;
+  
+  &:last-child {
+    padding-bottom: 0;
+  }
+  
+  &__showcase {
+    position: relative;
+    height: 100%;
+    margin-bottom: $space-l;
+  }
+  
+  &--reverse &__showcase {
+    @include respond-to(large) {
+      order: 2;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    &:hover + .l-project__img {
+      opacity: 0.5;
+    }
+
+    &:hover  ~ .c-project-label {
+      opacity: 1;
+    }
+
+    &:hover  ~* .c-project-label__text {
+      opacity: 1;
+    }
+  }
+  
+  &__img {
+    position: relative;
+    left: -$space-l;
+    max-width: 100vw;
+    vertical-align: middle;
+
+    transition: opacity 300ms ease-in-out;
+    
+    @include respond-to(small) {
+      left: 0;
+      max-width: 100%;
+    }
+  }
+  
+
+  &__description {
+    @include respond-to(large) {
+      align-self: center;
+      padding-left: $space-l * 2;
+    }
+  }
+
+  &--reverse &__description {
+    @include respond-to(large) {
+      padding-right: $space-l * 2;
+      padding-left: 0;
+    }
+  }
+
+  &__tags {
+    position: relative;
+    margin-top: $space-xl / 2;
+    margin-right: $space-s;
+    margin-left: -$space-s;
+    padding-top: $space-s;
+    font-size: 0.875rem;
+    color: $dark-grey;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: $space-s;
+
+      display: block;
+      max-width: 320px;
+      width: 100%;
+      height: 1px;
+      background-color: $grey;
+    }
+  }
+
+  &__tag {
+    padding: 0 $space-s $space-s / 2 $space-s;
+  }
+
+}
+
+.c-project-label {
+  position: absolute;
+  right: -$space-l;
+  bottom: $space-l;
+  opacity: 0.3;
+
+  width: 40%;
+  padding: 18px 0;
+  background-color: $secondary-color;
+
+  text-align: center;
+
+  transition: all 300ms ease-in-out;
+
+  @include respond-to(huge) {
+    right: -$space-l;
+    bottom: $space-xl;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+  }
+
+  .l-project--reverse & {
+    @include respond-to(huge) {
+      right: 0;
+      left: -$space-l;
+    }
+  }
+
+  &__text {
+    opacity: 0;
+    
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    line-height: 1;
+
+    transition: opacity 300ms ease-in-out;
+  }
+}
+
+/* Contact section */
+
+.c-contact-title {
+  display: block;
+  font-family: $title-font-stack;
+  font-size: 30px;
+  font-weight: 900;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.c-contact-details {
+  margin-top: $space-xl;
+  padding-top: $space-l;
+
+  &__item {
+    padding: $space-s 0 $space-m 0;
+    border-top: 1px solid $grey;
+
+    @include respond-to(medium) {
+      max-width: 320px;
+      width: calc(50% - (#{$space-xl} / 2));
+      margin-right: $space-xl;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__label {
+    margin-bottom: $space-s;
+
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: $dark-grey;
+  }
+}

@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+.l-list {
+  display: flex;
+  flex-direction: column;
+
+  &--horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: $space-xl / 2;
+
+    &--small {
+      margin-bottom: $space-s / 2;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--horizontal &__item {
+    margin-right: $space-l;
+    margin-bottom: 0;
+
+    &--small {
+      margin-right: $space-m;
+      margin-bottom: $space-s / 2;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
