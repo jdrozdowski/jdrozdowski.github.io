@@ -11,7 +11,15 @@
  * @type List
  */
 
-$text-font-stack: 'Catamaran', 'Arial', 'Helvetica', sans-serif;
+$text-font-stack: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+
+/**
+ * Heading font family
+ *
+ * @type List
+ */
+
+$heading-font-stack: 'Catamaran', 'Arial', 'Helvetica', sans-serif;
 
 /**
  * Title's font family
@@ -19,7 +27,7 @@ $text-font-stack: 'Catamaran', 'Arial', 'Helvetica', sans-serif;
  * @type String
  */
 
-$title-font-stack: 'Gilroy';
+$title-font-stack: 'Gilroy', 'Arial', 'Helvetica', sans-serif;
 
 /* Colors
    ========================================================================== */
