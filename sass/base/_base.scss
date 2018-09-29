@@ -29,6 +29,13 @@ ul {
 /* Responsive images */
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+/* Remove default styles for buttons */
+
+button {
+  background: none;
+  border: none;
 }

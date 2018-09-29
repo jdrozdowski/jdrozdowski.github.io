@@ -9,18 +9,28 @@ html {
 body {
   font-family: $text-font-stack;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   color: $text-color;
   line-height: 1.6;
 }
 
 h1,
-h2 {
-  font-family: $heading-font-stack;
-  font-weight: 400;
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+p {
+  max-width: 572px;
+  margin-bottom: 1em;
 }
 
 a {
   color: $text-color;
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
 }
