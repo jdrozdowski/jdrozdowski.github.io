@@ -11,23 +11,15 @@
  * @type List
  */
 
-$text-font-stack: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+$text-font-stack: 'Catamaran', 'Arial', 'Helvetica', sans-serif;
 
 /**
- * Serif font family
- *
- * @type List
- */
-
-$serif-font-stack: 'Libre Baskerville', 'Times New Roman', Times, serif;
-
-/**
- * Heading's font family
+ * Title's font family
  *
  * @type String
  */
 
-$heading-font-stack: 'Oswald';
+$title-font-stack: 'Gilroy';
 
 /* Colors
    ========================================================================== */
@@ -38,7 +30,8 @@ $heading-font-stack: 'Oswald';
  * @type Color
  */
 
-$black: hsl(0, 0%, 16%);
+$black: hsl(0, 0%, 13%);
+
 
 /**
  * Grey
@@ -46,15 +39,23 @@ $black: hsl(0, 0%, 16%);
  * @type Color
  */
 
- $grey: hsl(0, 0%, 94%);
+ $dark-grey: hsl(225, 4%, 64%);
+
+/**
+ * Grey
+ *
+ * @type Color
+ */
+
+$grey: hsl(0, 0%, 86%);
 
  /**
   * Light grey
   *
   * @type Color
   */
- 
- $light-grey: hsl(0, 0%, 97%);
+
+$light-grey:hsl(0, 0%, 95%);
 
 /**
 * White
@@ -65,20 +66,20 @@ $black: hsl(0, 0%, 16%);
 $white: hsl(0, 0%, 100%);
 
 /**
- * Yellow
+ * Sunray color
  *
  * @type Color
  */
 
-$yellow: hsl(45, 89%, 57%);
+$sunray-color: hsl(37, 80%, 64%);
 
 /**
- * Yellow
+ * Blue
  *
  * @type Color
  */
 
-$light-yellow: hsl(49, 84%, 66%);
+$blue:hsl(244, 42%, 46%);
 
 /**
  * Background color
@@ -86,7 +87,7 @@ $light-yellow: hsl(49, 84%, 66%);
  * @type Color
  */
 
-$background-color: $white;
+$background-color: $light-grey;
 
 /**
  * Text color
@@ -102,7 +103,15 @@ $text-color: $black;
  * @type Color
  */
 
-$primary-color: $yellow;
+$primary-color: $blue;
+
+/**
+ * Primary color
+ *
+ * @type Color
+ */
+
+ $secondary-color: $sunray-color;
 
 /* Spacing
    ========================================================================== */
@@ -113,7 +122,7 @@ $primary-color: $yellow;
  * @type Length
  */
 
-$max-width: 1200px;
+$max-width: 1440px;
 
 /**
  * Space system
@@ -124,8 +133,8 @@ $max-width: 1200px;
 $space-m: 20px;
 $space-s: $space-m / 2;
 $space-l: $space-m * 2;
-$space-xl: $space-l * 2;
-$space-xxl: $space-xl * 2;
+$space-xl: $space-m * 3;
+$space-xxl: $space-m * 6;
 
 /**
  * Breakpoints map
