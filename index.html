@@ -5,55 +5,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- TODO: Fill the content -->
-        <meta name="description" content="">
+        <meta name="description" content="Hello, my name is Jakub Drozdowski and
+        I’m a 23-year-old full-stack web developer.">
         <title>Jakub Drozdowski | Full-Stack Web Developer With Design Sense</title>
         <link rel="stylesheet"
-         href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i%7COswald:300,400,500%7CRaleway&amp;subset=latin-ext">
+         href="https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700&amp;subset=latin-ext">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <!-- page header -->
-        <header id="home" class="l-header">
-            <!-- menu toggle button -->
-            <div class="c-menu-toggle">
-                <div class="c-menu-toggle__top-line"></div>
-                <div class="c-menu-toggle__middle-line"></div>
-                <div class="c-menu-toggle__bottom-line"></div>
-            </div>
-            <!-- /menu toggle button -->
+        <header id="home" class="l-header c-header">
+            <div class="l-rows">
+                <!-- site navigation -->
+                <nav class="c-menu-toggle">
+                    <!-- menu toggle button -->
+                    <input class="c-menu-toggle__checkbox" type="checkbox">
+                    <div class="c-menu-toggle__icon">
+                        <div class="c-menu-toggle__top-line"></div>
+                        <div class="c-menu-toggle__middle-line"></div>
+                        <div class="c-menu-toggle__bottom-line"></div>
+                    </div>
+                    <!-- /menu toggle button -->
 
-            <!-- site logo -->
-            <a href="#home">
-                <img src="images/logo/logo.png" alt="">
-            </a>
-            <!-- /site logo -->
-
-            <p>
-                Code&nbsp;<span>&</span>
-                <br>Design
-            </p>
-            <div>
-                <div>
-                    <h1>Jakub Drozdowski</h1>
-                    <p>Full-stack web developer with&nbsp;design&nbsp;sense</p>
+                    <div class="l-menu">
+                        <div class="l-container">
+                            <ul class="c-menu">
+                                <li class="c-menu__item">
+                                    <a class="c-menu__link" href="#about">
+                                        About me
+                                    </a>
+                                </li>
+                                <li class="c-menu__item">
+                                    <a class="c-menu__link" href="#skills">
+                                        Skills
+                                    </a>
+                                </li>
+                                <li class="c-menu__item">
+                                    <a class="c-menu__link" href="#projects">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li class="c-menu__item">
+                                    <a class="c-menu__link" href="#about">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li class="c-menu__item c-menu__item--bottom">
+                                    <a class="c-menu__link c-menu__link--small"
+                                     href="mailto:jdrozdowski@protonmail.com">
+                                        jdrozdowski@protonmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /site navigation -->
+    
+                <!-- site logo -->
+                <a class="l-logo" href="#home">
+                    <img src="images/logo.jpg" alt="">
+                </a>
+                <!-- /site logo -->
+                
+                <div class="l-container l-header__content">
+                    <div class="l-row-l l-row-l--align-center">
+                        <div class="c-page-title">
+                            Code&nbsp;&<br>Design
+                        </div>
+                        <div class="l-header__intro">
+                            <h1 class="c-site-heading">Jakub Drozdowski</h1>
+                            <div class="l-header__intro-text">
+                                Full-stack web developer with&nbsp;design&nbsp;sense
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-button-container">
+                        <a class="c-button c-button--filled" href="#contact">Hire me</a>
+                    </div>
                 </div>
-                <a href="">Hire me</a>
+    
+                <a class="c-scroll-button" href="#about">
+                    <img class="c-scroll-button__icon"
+                     src="images/icons/arrow.svg"
+                     alt="">
+                    <span class="c-scroll-button__caption">
+                        Get to know me
+                    </span>
+                </a>
             </div>
-
-            <a href="#about">
-                <span>Get me know</span>
-            </a>
-
-            <!-- social media-->
-            <ul>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-            <!-- /social media-->
         </header>
         <!-- /page header -->
 
@@ -63,97 +103,223 @@
                 <div class="l-container">
                     <h2 class="c-section-heading">About me</h2>
                     <p class="c-title">
-                        Who <span>am</span> I?
+                        Who am I?
                     </p>
-                    <div class="l-columns l-columns--space-between">
-                        <p class="l-column">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Suspendisse feugiat felis
-                        id dictum scelerisque. Vivamus velit leo, tempor
-                        ultricies malesuada id, placerat vitae nisl. Integer
-                        quis est nec ipsum sagittis mollis sit amet eu leo.
-                        Vestibulum pulvinar semper ligula vel tristique.
-                        Maecenas lobortis purus nisl, non molestie risus commodo
-                        sed. In ut ullamcorper ex.</p>
-                        <p class="l-column">Etiam quis erat ut odio dictum
-                        fermentum. Phasellus mauris ante, laoreet semper
-                        malesuada et, tempor a quam. In viverra nisi sit amet
-                        sem dapibus, in consequat risus faucibus. Proin viverra
-                        lorem in vehicula pretium.</p>
+                    <div class="l-row l-row--space-between">
+                        <div class="l-column l-column--l-2-space">
+                            <p>Hello, my name is Jakub Drozdowski and I’m a
+                            23-year-old full-stack web developer. I was born in
+                            Nowy Sącz but currently I live in Crakow. I finished
+                            technical secondary school with specialisation in
+                            informatics where my enthusiasm for programming and
+                            desire to create has been born. Recently I graduated
+                            at Jagiellonian University with a degree in Bachelor
+                            of Electronic Information Processing where I gained
+                            necessary knowledge and discovered a passion for
+                            building useful and ease on the eye things.</p>
+                            <p>I enjoy creating meaningful projects and taking great
+                            satisfaction from them.</p>
+                        </div>
+                        <div class="l-column l-column--l-2-space">
+                            <p>I'm not afraid of challenges. I'm persistent in
+                            pursuing a goal and willingly and quickly learn new
+                            things. My meticulous attention to detail
+                            significantly enhances my analytical skills. I
+                            possess the ability to adapt to new situations and
+                            feel comfortable working in a team. 
+                        </p>
+                            <p>Obviously I like watching movies, reading books and listening
+                            to music. But also I'm very keen on sport, psychology and
+                            design.</p>
+                        </div>
                     </div>
 
                     <!-- features -->
-                    <ul>
-                        <li>
-                            <div>Attention to&nbsp;details</div>
+                    <ul class="l-row l-row l-features">
+                        <li class="l-column l-column--s-2 l-column--m-4 l-feature">
+                            <img class="l-features__icon" src="images/icons/research.svg" alt="">
+                            <div>
+                                Attention to&nbsp;details
+                            </div>
                         </li>
-                        <li>
-                            <div>Creativity</div>
+                        <li class="l-column l-column--s-2 l-column--m-4 l-feature">
+                            <img class="l-features__icon" src="images/icons/idea.svg" alt="">
+                            <div>
+                                Creativity
+                            </div>
                         </li>
-                        <li>
-                            <div>Desire&nbsp;to development</div>
+                        <li class="l-column l-column--s-2 l-column--m-4 l-feature">
+                            <img class="l-features__icon" src="images/icons/growth.svg" alt="">
+                            <div>
+                                Desire&nbsp;to development
+                            </div>
                         </li>
-                        <li>
-                            <div>Passion</div>
+                        <li class="l-column l-column--s-2 l-column--m-4 l-feature">
+                            <img class="l-features__icon" src="images/icons/heart.svg" alt="">
+                            <div>
+                                Passion
+                            </div>
                         </li>
                     </ul>
                     <!-- /features -->
 
                     <!-- education -->
-                    <section>
+                    <section class="l-subsection">
                         <h3 class="c-subsection-heading">Education</h3>
-                        <ul class="l-columns">
-                            <li class="l-column">
-                                <p>2015&ndash;2018</p>
+                        <ul class="l-row l-list">
+                            <li class="l-column l-column--m-2 l-list__item l-row-l">
+                                <time class="c-date" datetime="2015/2018">
+                                    2015&ndash;2018
+                                </time>
                                 <div>
-                                    <h4 class="c-inner-heading">
+                                    <h4 class="c-inner-heading c-inner-heading--margin-top-0">
                                         Bachelor's degree
                                     </h4>
-                                    <p>
-                                        Jagiellonian University
-                                        <br>Electronic Data Processing
-                                    </p>
+                                    Jagiellonian University
+                                    <div class="h-light-text">Electronic Information Processing</div>
                                 </div>
                             </li>
-                            <li class="l-column">
-                                <p>2011&ndash;2015</p>
+                            <li class="l-column l-column--m-2 l-list__item l-row-l">
+                                <time class="c-date" datetime="2011/2015">
+                                    2011&ndash;2015
+                                </time>
                                 <div>
-                                    <h4 class="c-inner-heading">
+                                    <h4 class="c-inner-heading c-inner-heading--margin-top-0">
                                         Technician IT
                                     </h4>
-                                    <p>
+                                    <div>
                                         Zespół Szkół
                                         Elektryczno&ndash;Mechanicznych
                                         w&nbsp;Nowym&nbsp;Sączu
-                                    </p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </section>
                     <!-- /education -->
 
-                    <a href="">Get my resume</a>
+                    <div class="l-button-wrapper l-button-wrapper--center l-button-wrapper--right-l">
+                        <a class="c-button c-button--underlined" href="">
+                            Get my resume
+                        </a>
+                    </div>
                 </div>
             </section>
             <!-- /about -->
 
             <!-- skills -->
             <section class="l-section">
-                <h2 class="c-section-heading">Skills</h2>
-                <p class="c-title">
-                    What <span>can</span> I do?
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse feugiat felis id dictum scelerisque. Vivamus velit
-                leo, tempor ultricies malesuada id, placerat vitae nisl. Integer
-                quis est nec ipsum sagittis mollis sit amet eu leo. Vestibulum
-                pulvinar semper ligula vel tristique.</p>
-
-                <!-- front-end -->
-                <section>
-                    <h3 class="c-subsection-heading">Front-end</h3>
-
-                    <div class="l-columns">
-                        <div class="l-column l-column--l-auto">
+                <div class="l-container">
+                    <h2 class="c-section-heading">Skills</h2>
+                    <p class="c-title">
+                        What can I do?
+                    </p>
+                    <p>I advance in building complex web applications. I possess
+                    a wide range of skills, which include competencies in both
+                    frontend and backend development. I also have discernible
+                    knowledge in the field of design, user experience, web
+                    accessibility and solid understanding of network building
+                    and management. Nowadays I’m focused on broaden my
+                    JavaScript’s expertise.</p>
+    
+                    <!-- front-end -->
+                    <section class="l-subsection l-subsection--with-top">
+                        <h3 class="c-subsection-heading">Front-end</h3>
+    
+                        <div class="l-row">
+                            <div class="l-column l-column--l-auto">
+                                <!-- chart -->
+                                <table class="c-chart">
+                                    <!-- labels -->
+                                    <thead>
+                                        <tr class="c-chart__labels">
+                                            <th class="c-chart__label">
+                                                <div class="c-chart__label__caption">
+                                                    Basic
+                                                </div>
+                                            </th>
+                                            <th class="c-chart__label">
+                                                <div class="c-chart__label__caption">
+                                                    Regular
+                                                </div>
+                                            </th>
+                                            <th class="c-chart__label">
+                                                <div class="c-chart__label__caption">
+                                                    Advanced
+                                                </div>
+                                            </th>
+                                            <th class="c-chart__label">
+                                                <div class="c-chart__label__caption">
+                                                    Expert
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <!-- /labels -->
+    
+                                    <!-- data -->
+                                    <tbody class="c-chart__data">
+                                        <tr class="c-chart__data-item c-chart__data-item--advanced">
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="c-chart__data-item__caption">
+                                                    HTML5
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="c-chart__data-item c-chart__data-item--advanced">
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="c-chart__data-item__caption">
+                                                    CSS3
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="c-chart__data-item c-chart__data-item--basic">
+                                            <td>
+                                                <div class="c-chart__data-item__caption">
+                                                    JavaScript
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="c-chart__data-item c-chart__data-item--advanced">
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="c-chart__data-item__caption">
+                                                    Bootstrap&nbsp;& Materialize
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <!-- /data -->
+                                </table>
+                                <!-- /chart -->
+                            </div>
+                            
+                            <div class="l-column l-column--l-auto h-margin-left-100-l">
+                                <p class="l-column c-inner-heading">Aditionally:</p>
+                                <div>
+                                    Sass <span class="h-secondary-color-text">&</span> BEM
+                                </div> 
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /front-end -->
+    
+                    <!-- back-end -->
+                    <section class="l-subsection l-subsection--right">
+                        <div class="h-inline-block-l">
+                            <h3 class="c-subsection-heading">Back-end</h3>
+        
                             <!-- chart -->
                             <table class="c-chart">
                                 <!-- labels -->
@@ -182,15 +348,35 @@
                                     </tr>
                                 </thead>
                                 <!-- /labels -->
-
+        
                                 <!-- data -->
                                 <tbody class="c-chart__data">
+                                    <tr class="c-chart__data-item c-chart__data-item--regular">
+                                        <td></td>
+                                        <td>
+                                            <div class="c-chart__data-item__caption">
+                                                Python
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="c-chart__data-item c-chart__data-item--regular">
+                                        <td></td>
+                                        <td>
+                                            <div class="c-chart__data-item__caption">
+                                                PHP
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                     <tr class="c-chart__data-item c-chart__data-item--advanced">
                                         <td></td>
                                         <td></td>
                                         <td>
                                             <div class="c-chart__data-item__caption">
-                                                HTML5
+                                                MySQL
                                             </div>
                                         </td>
                                         <td></td>
@@ -200,29 +386,29 @@
                                         <td></td>
                                         <td>
                                             <div class="c-chart__data-item__caption">
-                                                CSS3
+                                                Django
                                             </div>
                                         </td>
                                         <td></td>
                                     </tr>
-                                    <tr class="c-chart__data-item c-chart__data-item--basic">
+                                    <tr class="c-chart__data-item c-chart__data-item--regular">
+                                        <td></td>
                                         <td>
                                             <div class="c-chart__data-item__caption">
-                                                JavaScript
+                                                Flask
                                             </div>
                                         </td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
-                                    <tr class="c-chart__data-item c-chart__data-item--advanced">
-                                        <td></td>
+                                    <tr class="c-chart__data-item c-chart__data-item--regular">
                                         <td></td>
                                         <td>
                                             <div class="c-chart__data-item__caption">
-                                                Bootstrap&nbsp;& Materialize
+                                                Silex
                                             </div>
                                         </td>
+                                        <td></td>
                                         <td></td>
                                     </tr>
                                 </tbody>
@@ -230,391 +416,410 @@
                             </table>
                             <!-- /chart -->
                         </div>
-                        
-                        <div class="l-column">
-                            <p class="l-column">Aditionally:</p>
-                            <ul class="l-column">
-                                <li class="">Sass</li>
-                                <li class="">BEM</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- /front-end -->
-
-                <!-- back-end -->
-                <section class="">
-                    <h3 class="c-subsection-heading">Back-end</h3>
-
-                    <!-- chart -->
-                    <table class="c-chart">
-                        <!-- labels -->
-                        <thead>
-                            <tr class="c-chart__labels">
-                                <th class="c-chart__label">
-                                    <div class="c-chart__label__caption">
-                                        Basic
-                                    </div>
-                                </th>
-                                <th class="c-chart__label">
-                                    <div class="c-chart__label__caption">
-                                        Regular
-                                    </div>
-                                </th>
-                                <th class="c-chart__label">
-                                    <div class="c-chart__label__caption">
-                                        Advanced
-                                    </div>
-                                </th>
-                                <th class="c-chart__label">
-                                    <div class="c-chart__label__caption">
-                                        Expert
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <!-- /labels -->
-
-                        <!-- data -->
-                        <tbody class="c-chart__data">
-                            <tr class="c-chart__data-item c-chart__data-item--regular">
-                                <td></td>
-                                <td>
-                                    <div class="c-chart__data-item__caption">
-                                        Python
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr class="c-chart__data-item c-chart__data-item--regular">
-                                <td></td>
-                                <td>
-                                    <div class="c-chart__data-item__caption">
-                                        PHP
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr class="c-chart__data-item c-chart__data-item--advanced">
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <div class="c-chart__data-item__caption">
-                                        MySQL
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr class="c-chart__data-item c-chart__data-item--advanced">
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <div class="c-chart__data-item__caption">
-                                        Django
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr class="c-chart__data-item c-chart__data-item--regular">
-                                <td></td>
-                                <td>
-                                    <div class="c-chart__data-item__caption">
-                                        Flask
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr class="c-chart__data-item c-chart__data-item--regular">
-                                <td></td>
-                                <td>
-                                    <div class="c-chart__data-item__caption">
-                                        Silex
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <!-- /data -->
-                    </table>
-                    <!-- /chart -->
-                </section>
-                <!-- /back-end -->
-
-                <!-- other -->
-                <section>
-                    <h3 class="c-subsection-heading">Other</h3>
-
-                    <ul class="l-columns">
-                        <li class="l-column l-column--s-2 l-column--l-3">
-                            <h4 class="c-inner-heading">Programming</h4>
-                            <ul class="c-list">
-                                <li class="c-list__item">
-                                    Object-Oriented Programming
-                                </li>
-                                <li class="c-list__item">C/C++ (basic)</li>
-                            </ul>
-                        </li>
-                        <li class="l-column l-column--s-2 l-column--l-3">
-                            <h4 class="c-inner-heading">Workflow</h4>
-                            <ul class="c-list">
-                                <li class="c-list__item">GIT</li>
-                                <li class="c-list__item">Github</li>
-                            </ul>
-                        </li>
-                        <li class="l-column l-column--s-2 l-column--l-3">
-                            <h4 class="c-inner-heading">Graphics</h4>
-                            <ul class="c-list">
-                                <li class="c-list__item">Photoshop</li>
-                                <li class="c-list__item">CorelDRAW</li>
-                            </ul>
-                        </li>
-                        <li class="l-column l-column--s-2 l-column--l-3">
-                            <h4 class="c-inner-heading">Software</h4>
-                            <ul class="c-list">
-                                <li class="c-list__item">Windows</li>
-                                <li class="c-list__item">Linux</li>
-                                <li class="c-list__item">Bash</li>
-                            </ul>
-                        </li>
-                        <li class="l-column l-column--s-2 l-column--l-3">
-                            <h4 class="c-inner-heading">Languages</h4>
-                            <ul class="c-list">
-                                <li class="c-list__item">Polish (first language)</li>
-                                <li class="c-list__item">English (B2)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <!-- /other -->
+                    </section>
+                    <!-- /back-end -->
+    
+                    <!-- other -->
+                    <section>
+                        <h3 class="c-subsection-heading">Other</h3>
+    
+                        <ul class="l-row">
+                            <li class="l-column l-column--s-2-space l-column--l-3-space">
+                                <h4 class="c-inner-heading">Programming</h4>
+                                <ul class="l-list">
+                                    <li class="l-list__item l-list__item--small">
+                                        Object-Oriented Programming
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        C/C++ (basic)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="l-column l-column--s-2-space l-column--l-3-space">
+                                <h4 class="c-inner-heading">Workflow</h4>
+                                <ul class="l-list">
+                                    <li class="l-list__item l-list__item--small">
+                                        Git
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        Github
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="l-column l-column--s-2-space l-column--l-3-space">
+                                <h4 class="c-inner-heading">Software & Networking</h4>
+                                <ul class="l-list">
+                                    <li class="l-list__item l-list__item--small">
+                                        Windows
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        Linux, BASH
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        Network Building & Management
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="l-column l-column--s-2-space l-column--l-3-space">
+                                <h4 class="c-inner-heading">Graphics</h4>
+                                <ul class="l-list">
+                                    <li class="l-list__item l-list__item--small">
+                                        Photoshop
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        CorelDRAW
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="l-column l-column--s-2-space l-column--l-3-space">
+                                <h4 class="c-inner-heading">SEM</h4>
+                                <ul class="l-list">
+                                    <li class="l-list__item l-list__item--small">
+                                        Google AdWords (basic)
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        Google Analytics (basic)
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        Google Tag Manager (basic)
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        Technical SEO
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="l-column l-column--s-2-space l-column--l-3-space">
+                                <h4 class="c-inner-heading">Languages</h4>
+                                <ul class="l-list">
+                                    <li class="l-list__item l-list__item--small">
+                                        Polish (first language)
+                                    </li>
+                                    <li class="l-list__item l-list__item--small">
+                                        English (B2)
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- /other -->
+                </div>
             </section>
             <!-- /skills -->
             
             <!-- projects -->
             <section class="l-section">
-                <h2 class="c-section-heading">Projects</h2>
-                <p class="c-title">
-                    What did I <span>do?</span>
-                </p>
-                <ul>
-                    <li>
-                        <div>
-                            <h3>Onoff</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Suspendisse feugiat felis id dictum
-                            scelerisque. Vivamus velit leo, tempor ultricies
-                            malesuada id, placerat vitae nisl. Integer quis est
-                            nec ipsum sagittis mollis sit amet eu leo.
-                            Vestibulum pulvinar semper ligula vel tristique.</p>
-                            <ul>
-                                <li>
-                                    <div>HTML5</div>
-                                </li>
-                                <li>
-                                    <div>CSS3</div>
-                                </li>
-                                <li>
-                                    <div>Django</div>
-                                </li>
-                                <li>
-                                    <div>MySQL</div>
-                                </li>
-                                <li>
-                                    <div>Materialize</div>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="l-container">
+                    <h2 class="c-section-heading">Projects</h2>
+                    <p class="c-title">
+                        What did I do?
+                    </p>
+                    <ul>
+                        <!-- project #1 -->
+                        <li class="l-row l-project">
+                            <div class="l-column l-column--l-2 l-project__showcase">
+                                <a class="l-project__link"
+                                 href="http://leszczyna.wzks.uj.edu.pl/15_drozdowski/onoff">
+                                </a>
+                                <img class="l-project__img" src="images/onoff.png" alt="">
+                                <div class="c-project-label">
+                                    <span class="c-project-label__text">
+                                        Visit
+                                    </span>
+                                </div>
+                            </div>
 
-                        <div>
-                            <img src="images/" alt="">
-                            <a href="">Visit</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Dotbox</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Suspendisse feugiat felis id dictum
-                            scelerisque. Vivamus velit leo, tempor ultricies
-                            malesuada id, placerat vitae nisl. Integer quis est
-                            nec ipsum sagittis mollis sit amet eu leo.
-                            Vestibulum pulvinar semper ligula vel tristique.</p>
-                            <ul>
-                                <li>
-                                    <div>HTML5</div>
-                                </li>
-                                <li>
-                                    <div>CSS3</div>
-                                </li>
-                                <li>
-                                    <div>Python</div>
-                                </li>
-                                <li>
-                                    <div>Flask</div>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="l-column l-column--l-2 l-project__description">
+                                <h3 class="c-subsection-heading">Onoff</h3>
+                                <p>The website which enables users to organize
+                                social meetings in order to realize common passions
+                                of their participants. The project’s aim is to make
+                                it possible for Internet users to make acquaintances
+                                online and then develop acquaintanceship in the real
+                                world by realizing specified activities together.
+                                Through the website it is possible both organising
+                                own group meetings and joining to already existing
+                                concepts, created by other users.</p>
+                                <ul class="l-project__tags l-row">
+                                    <li class="l-project__tag">
+                                        HTML5
+                                    </li>
+                                    <li class="l-project__tag">
+                                        CSS3
+                                    </li>
+                                    <li class="l-project__tag">
+                                        Django
+                                    </li>
+                                    <li class="l-project__tag">
+                                        MySQL
+                                    </li>
+                                    <li class="l-project__tag">
+                                        Materialize
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- /project #1 -->
 
-                        <div>
-                            <img src="images/" alt="">
-                            <a href="">Visit</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Ganton</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Suspendisse feugiat felis id dictum
-                            scelerisque. Vivamus velit leo, tempor ultricies
-                            malesuada id, placerat vitae nisl. Integer quis est
-                            nec ipsum sagittis mollis sit amet eu leo.
-                            Vestibulum pulvinar semper ligula vel tristique.</p>
-                            <ul>
-                                <li>
-                                    <div>HTML5</div>
-                                </li>
-                                <li>
-                                    <div>CSS3</div>
-                                </li>
-                                <li>
-                                    <div>Silex</div>
-                                </li>
-                                <li>
-                                    <div>MySQL</div>
-                                </li>
-                                <li>
-                                    <div>Bootstrap</div>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- project #2 -->
+                        <li class="l-row l-project l-project--reverse">
+                            <div class="l-column l-column--l-2 l-project__showcase">
+                                <a class="l-project__link"
+                                 href="http://wierzba.wzks.uj.edu.pl:5007/">
+                                </a>
+                                <img class="l-project__img" src="images/dotbox.png" alt="">
+                                <div class="c-project-label">
+                                    <span class="c-project-label__text">
+                                        Visit
+                                    </span>
+                                </div>
+                            </div>
 
-                        <div>
-                            <img src="images/" alt="">
-                            <a href="">Visit</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Dietetic Carrot</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Suspendisse feugiat felis id dictum
-                            scelerisque. Vivamus velit leo, tempor ultricies
-                            malesuada id, placerat vitae nisl. Integer quis est
-                            nec ipsum sagittis mollis sit amet eu leo.
-                            Vestibulum pulvinar semper ligula vel tristique.</p>
-                            <ul>
-                                <li>
-                                    <div>HTML5</div>
-                                </li>
-                                <li>
-                                    <div>CSS3</div>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <img src="images/" alt="">
-                            <a href="">Visit</a>
-                        </div>
-                    </li>
-                </ul>
+                            <div class="l-column l-column--l-2 l-project__description">
+                                <h3 class="c-subsection-heading">Dotbox</h3>
+                                <p>Dots and boxes web browser game fully built with
+                                Python 3 and Flask. The website enables a gamer to
+                                contend with both other human player or Artifical
+                                Intelligence player. Users can select from among 5
+                                kinds of boards which differ in dimensions.</p>
+                                <ul class="l-project__tags l-row">
+                                    <li class="l-project__tag">
+                                        HTML5
+                                    </li>
+                                    <li class="l-project__tag">
+                                        CSS3
+                                    </li>
+                                    <li class="l-project__tag">
+                                        Python
+                                    </li>
+                                    <li class="l-project__tag">
+                                        Flask
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- /project #2 -->
+
+                        <!-- project #3 -->
+                        <li class="l-row l-project">
+                            <div class="l-column l-column--l-2 l-project__showcase">
+                                <a class="l-project__link"
+                                 href="http://cis.wzks.uj.edu.pl/~15_drozdowski/web/auth/login">
+                                </a>
+                                <img class="l-project__img" src="images/ganton.png" alt="">
+                                <div class="c-project-label">
+                                    <span class="c-project-label__text">
+                                        Visit
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="l-column l-column--l-2 l-project__description">
+                                <h3 class="c-subsection-heading">Ganton</h3>
+                                <p>A workout tracking web application which
+                                enables users to choose a workout plan or create
+                                their own and share it with other users. Users can
+                                invite others to participate in their workouts and
+                                send messages. There are two kinds of accounts:
+                                Athlete and Coach. The website provides opportunity for
+                                cooperation between them.</p>
+                                <ul class="l-project__tags l-row">
+                                    <li class="l-project__tag">
+                                        HTML5
+                                    </li>
+                                    <li class="l-project__tag">
+                                        CSS3
+                                    </li>
+                                    <li class="l-project__tag">
+                                        Silex
+                                    </li>
+                                    <li class="l-project__tag">
+                                        MySQL
+                                    </li>
+                                    <li class="l-project__tag">
+                                        Bootstrap
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- /project #3 -->
+
+                        <!-- project #4 -->
+                        <li class="l-row l-project l-project--reverse">
+                            <div class="l-column l-column--l-2 l-project__showcase">
+                                <a class="l-project__link"
+                                 href="http://wierzba.wzks.uj.edu.pl/~15_drozdowski/Projekt/">
+                                </a>
+                                <img class="l-project__img" src="images/dietetic-carrot.png" alt="">
+                                <div class="c-project-label">
+                                    <span class="c-project-label__text">
+                                        Visit
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="l-column l-column--l-2 l-project__description">
+                                <h3 class="c-subsection-heading">Dietetic Carrot</h3>
+                                <p>A static website for people interested in healthy
+                                eating, only based on HTML5 and CSS3. The site
+                                contains recipes and articles about diets and
+                                everything what is connected with healthy
+                                eating.</p>
+                                <ul class="l-project__tags l-row">
+                                    <li class="l-project__tag">
+                                        HTML5
+                                    </li>
+                                    <li class="l-project__tag">
+                                        CSS3
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- /project #4 -->
+                    </ul>
+                </div>
             </section>
             <!-- /projects -->
 
             <!-- contact -->
-            <section class="l-section">
-                <h2 class="c-section-heading">Contact me</h2>
-                <p class="c-title">
-                    Let's <span>talk</span>!
-                </p>
-                <p>If you have any questions, please don't hesitate to contact
-                me</p>
+            <section class="l-section h-white-bg">
+                <div class="l-container">
+                    <h2 class="c-section-heading">
+                        Contact me
+                    </h2>
 
-                <!-- contact details -->
-                <address>
-                    <div>
-                        Jakub Drozdowski
-                    </div>
-                    <div>
-                        Crakow, Poland
-                    </div>
-                    <div>
-                        <a href="mailto:jdrozdowski@protonmail.com">
-                            jdrozdowski@protonmail.com
-                        </a>
-                    </div>
-                </address>
-                <!-- /contact details -->
+                    <div class="l-row l-row--space-between">
+                        <p class="l-column l-column--l-2-space">
+                            Do you have any questions?
+                            <span class="c-contact-title">
+                                Drop&nbsp;a&nbsp;message.
+                            </span>
+                        </p>
+                        
+                        <div class="l--column l-column l-column--l-2-space">
 
-                <!-- contact form  -->
-                <form class="c-form" action="#" method="POST">
-                    <div class="l-input-container">
-                        <input 
-                         id="name"
-                         class="c-form__input"
-                         name="name"
-                         type="text" 
-                         required>
-                        <label class="c-form__label" for="name">
-                            Your name
-                        </label>
+                            <!-- contact form  -->
+                            <form class="c-form" action="#" method="POST">
+                                <div class="l-row l-row--space-between">
+                                    <div class="l-input-container l-column l-column--s-2-auto">
+                                        <input 
+                                         id="name"
+                                         class="c-form__input"
+                                         name="name"
+                                         type="text" 
+                                         required>
+                                        <label class="c-form__label" for="name">
+                                            <span class="c-form__label-text">Your name</span>
+                                        </label>
+                                    </div>
+                                    <div class="l-input-container l-column l-column--s-2-auto">
+                                        <input id="email"
+                                         class="c-form__input"
+                                         name="email"
+                                         type="text"
+                                         required>
+                                        <label class="c-form__label" for="email">
+                                            <span class="c-form__label-text">Your e-mail</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="l-input-container l-input-container--last">
+                                    <textarea id="message"
+                                     class="c-form__input"
+                                     name="message"
+                                     required></textarea>
+                                    <label class="c-form__label" for="message">
+                                        <span class="c-form__label-text">Message</span>
+                                    </label>
+                                </div>
+                                <div class="l-button-wrapper l-button-wrapper--right">
+                                    <button
+                                     class="c-button c-button--underlined c-form__submit"
+                                     type="submit">Send</button>
+                                </div>
+                            </form>
+                            <!-- /contact form  -->
+                        </div>
                     </div>
-                    <div class="l-input-container">
-                        <input id="email"
-                         class="c-form__input"
-                         name="email"
-                         type="email"
-                         required>
-                        <label class="c-form__label" for="email">
-                            Your e-mail
-                        </label>
-                    </div>
-                    <div class="l-input-container">
-                        <textarea id="message"
-                         class="c-form__input c-form__input--area"
-                         name="message"
-                         required></textarea>
-                        <label class="c-form__label" for="message">
-                            Message
-                        </label>
-                    </div>
-                    <div class="l-button-container">
-                        <button
-                         class="c-button c-button--outline c-form__submit"
-                         type="submit">Send</button>
-                    </div>
-                </form>
-                <!-- /contact form  -->
+                    
+                    <!-- contact details-->
+                    <ul class="c-contact-details l-row">
+                        <li class="c-contact-details__item l-column">
+                            <div class="c-contact-details__label">E-mail</div>
+                            <a class="h-bold-text h-main-color-text h-link-hover"
+                                href="mailto:jdrozdowski@protonmail.com">
+                                jdrozdowski@protonmail.com
+                            </a>
+                        </li>
+
+                        <!-- social media -->
+                        <li class="c-contact-details__item l-column">
+                            <div class="c-contact-details__label">Social</div>
+                            <ul class="l-list l-list--horizontal">
+                                <li class="l-list__item">
+                                    <a class="h-link-hover h-link-hover--circle"
+                                     href="">
+                                        <svg class="c-icon c-icon--main-color"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" viewBox="0 0 24 24"><path
+                                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48
+                                            2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5
+                                            2.48-2.5s2.48 1.12 2.48 2.5zm.02
+                                            4.5h-5v16h5v-16zm7.982
+                                            0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052
+                                            6.029
+                                            0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="h-link-hover h-link-hover--circle"
+                                     href="">
+                                        <svg class="c-icon c-icon--main-color"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" viewBox="0 0 24 24"><path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438
+                                        9.8 8.207
+                                        11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729
+                                        1.205.084 1.839 1.237 1.839 1.237 1.07 1.834
+                                        2.807 1.304
+                                        3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931
+                                        0-1.311.469-2.381
+                                        1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0
+                                        1.008-.322 3.301 1.23.957-.266 1.983-.399
+                                        3.003-.404 1.02.005 2.047.138 3.006.404
+                                        2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242
+                                        2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0
+                                        4.609-2.807 5.624-5.479 5.921.43.372.823
+                                        1.102.823 2.222v3.293c0 .319.192.694.801.576
+                                        4.765-1.589 8.199-6.086 8.199-11.386
+                                        0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- /social media -->
+                    </ul>
+                    <!-- /contact details-->
+                </div>
             </section>
             <!-- /contact -->
         </main>
 
         <!-- site footer -->
-        <footer>
-            <!-- social media -->
-            <ul>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-            <!-- /social media -->
-            
-            <p>2018 &copy; Jakub Drozdowski</p>
+        <footer class="c-footer h-white-bg">
+            <div class="l-container">
+                2018 &copy; Jakub Drozdowski
+            </div>
         </footer>
         <!-- /site footer -->
 
         <!-- page border -->
         <div>
-            <div class="c-frame c-frame--top"></div>
-            <div class="c-frame c-frame--right"></div>
-            <div class="c-frame c-frame--bottom"></div>
-            <div class="c-frame c-frame--left"></div>
+            <div class="c-border c-border--top"></div>
+            <div class="c-border c-border--right"></div>
+            <div class="c-border c-border--bottom"></div>
+            <div class="c-border c-border--left"></div>
         </div>
         <!-- /page border -->
     </body>
