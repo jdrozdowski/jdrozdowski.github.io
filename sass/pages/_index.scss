@@ -13,7 +13,7 @@
   overflow-x: hidden;
 
   height: 100vh;
-  margin-bottom: $space-m;
+  margin-bottom: $space-l;
   padding: $space-m 0;
   box-sizing: border-box;
 
@@ -23,7 +23,12 @@
     padding-bottom: $space-l;
   }
 
+  @include respond-to(medium) {
+    margin-bottom: $space-xl + $space-m;
+  }
+
   @include respond-to(huge) {
+    margin-bottom: $space-xxl;
     padding-top: $space-xl;
     padding-bottom: $space-xl;
   }
@@ -45,12 +50,13 @@
       max-width: 50%;
     }
 
-    @include respond-to(small) {
-      padding-left: $space-m;
-    }
-
     @include respond-to(large) {
       margin-top: 0;
+      padding-left: $space-l;
+    }
+
+    @include respond-to(huge) {
+      padding-left: $space-xl;
     }
   }
 
@@ -61,7 +67,11 @@
     text-transform: capitalize;
 
     @include respond-to(medium) {
-      max-width: 100%;
+      font-size: 1.0625rem;
+    }
+
+    @include respond-to(huge) {
+      font-size: 1.125rem;
     }
   }
 }
@@ -114,20 +124,15 @@
   text-transform: uppercase;
 
   @include respond-to(small) {
-    font-size: 5rem;
-  }
-
-  @include respond-to(medium) {
-    font-size: 5.5rem;
-  }
-
-  @include respond-to(large) {
     font-size: 6rem;
   }
 
+  @include respond-to(medium) {
+    font-size: 6.25rem;
+  }
+
   @include respond-to(huge) {
-    font-size: 8.75rem;
-    margin-left: 0;
+    font-size: 8.125rem;
   }
 }
 
@@ -137,7 +142,7 @@
 .c-title {
   position: relative;
   display: inline-block;
-  margin-bottom: $space-l + $space-s;
+  margin-bottom: $space-xl;
 
   font-family: $title-font-stack;
   font-size: 2.8rem;
@@ -147,8 +152,17 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 
+  @include respond-to(medium) {
+    font-size: 3.375rem;
+  }
+
   @include respond-to(large) {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: $space-xl + $space-m;
+  }
+
+  @include respond-to(huge) {
+    margin-bottom: $space-xxl;
   }
 
   &::before {
@@ -183,16 +197,25 @@
 /* About section */
 
 .l-features {
-  justify-content: space-between;
-  max-width: 750px;
+  justify-content: space-around;
   margin-top: $space-l;
   margin-right: auto;
-  margin-bottom: $space-xl / 2;
+  margin-bottom: $space-m;
   margin-left: auto;
   text-align: center;
 
+  @include respond-to(large) {
+    margin-top: $space-xl;
+    margin-bottom: $space-l;
+  }
+
+  @include respond-to(huge) {
+    margin-top: $space-xl + $space-l;
+    margin-bottom: $space-xl + $space-m;
+  }
+
   .l-feature {
-    margin-bottom: $space-xl / 2;
+    margin-bottom: $space-l;
 
     @include respond-to(medium) {
       max-width: 100px;
@@ -214,15 +237,28 @@
 
 .l-project {
   padding: $space-xl / 2 0 $space-l + $space-s 0;
-  
+
+  @include respond-to(huge) {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+
   &:last-child {
     padding-bottom: 0;
+  }
+
+  &--padding-top-0 {
+    padding-top: 0;
   }
   
   &__showcase {
     position: relative;
     height: 100%;
     margin-bottom: $space-l;
+
+    @include respond-to(large) {
+      margin-bottom: 0;
+    }
   }
   
   &--reverse &__showcase {
@@ -265,7 +301,6 @@
       max-width: 100%;
     }
   }
-  
 
   &__description {
     @include respond-to(large) {
@@ -283,7 +318,7 @@
 
   &__tags {
     position: relative;
-    margin-top: $space-xl / 2;
+    margin-top: $space-l;
     margin-right: $space-s;
     margin-left: -$space-s;
     padding-top: $space-s;
@@ -307,7 +342,6 @@
   &__tag {
     padding: 0 $space-s $space-s / 2 $space-s;
   }
-
 }
 
 .c-project-label {
@@ -349,6 +383,14 @@
     line-height: 1;
 
     transition: opacity 300ms ease-in-out;
+
+    &::after {
+      content: url('../images/icons/external-link.svg');
+
+      display: inline-block;
+      vertical-align: top;
+      margin-left: $space-s;
+    }
   }
 }
 
@@ -357,15 +399,22 @@
 .c-contact-title {
   display: block;
   font-family: $title-font-stack;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 900;
   color: $primary-color;
   text-transform: uppercase;
+
+  @include respond-to(medium) {
+    font-size: 2.125rem;
+  }
+
+  @include respond-to(huge) {
+    font-size: 3rem;
+  }
 }
 
 .c-contact-details {
   margin-top: $space-xl;
-  padding-top: $space-l;
 
   &__item {
     padding: $space-s 0 $space-m 0;

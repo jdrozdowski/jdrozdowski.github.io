@@ -148,6 +148,15 @@
 .l-section {
   padding: $space-xl 0;
   overflow-x: hidden;
+
+  @include respond-to(medium) {
+    padding-bottom: $space-xl + $space-m;
+  }
+
+  @include respond-to(huge) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
 }
 
 /* Subsection container */
@@ -155,8 +164,20 @@
 .l-subsection {
   margin-bottom: $space-xl;
 
+  @include respond-to(large) {
+    margin-bottom: $space-xl + $space-m;
+  }
+
+  @include respond-to(huge) {
+    margin-bottom: $space-xxl;
+  }
+
   &--with-top {
     margin-top: $space-xl;
+
+    @include respond-to(huge) {
+      margin-top: $space-xxl;
+    }
   }
 
   &--right {

@@ -3,12 +3,18 @@
    ========================================================================== */
 
 .c-site-heading {
+  margin-bottom: $space-s;
+
   font-size: 1.5rem;
   font-weight: 400;
   color: $white;
 
-  @include respond-to(large) {
-    font-size: 2rem;
+  @include respond-to(medium) {
+    font-size: 1.625rem;
+  }
+
+  @include respond-to(huge) {
+    font-size: 1.75rem;
   }
 }
 
@@ -20,15 +26,23 @@
 }
 
 .c-subsection-heading {
-  margin-bottom: $space-xl / 2;
+  margin-bottom: $space-l;
 
   font-family: $title-font-stack;
   font-size: 1.875rem;
   font-weight: 900;
   text-align: left;
 
+  @include respond-to(medium) {
+    font-size: 2.125rem;
+  }
+
   @include respond-to(large) {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  @include respond-to(huge) {
+    margin-bottom: $space-xl;
   }
 
   &::after {
@@ -40,14 +54,28 @@
     margin-top: $space-s / 2;
     background-color: $primary-color;
   }
+
+  &--sm {
+    @include respond-to(huge) {
+      margin-bottom: $space-l;
+    }
+  }
+
+  &--margin-bottom-0 {
+    margin-bottom: 0;
+  }
 }
 
 .c-inner-heading {
-  margin: $space-xl / 2 0 $space-s 0;
+  margin: $space-l 0 $space-s 0;
 
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
+
+  @include respond-to(huge) {
+    margin-top: $space-xl;
+  }
 
   &--margin-top-0 {
     margin-top: 0;
