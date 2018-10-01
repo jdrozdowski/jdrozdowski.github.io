@@ -94,6 +94,8 @@
   height: 60px;
   margin-left: $space-l;
 
+  transition: opacity 300ms ease-in-out;
+
   @include respond-to(small) {
     margin-left: $space-l;
   }
@@ -110,6 +112,10 @@
   @include respond-to(medium) {
     top: $space-l;
     left: $space-l * 2;
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 }
 
@@ -356,7 +362,7 @@
 
   text-align: center;
 
-  transition: all 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 
   @include respond-to(huge) {
     right: -$space-l;
