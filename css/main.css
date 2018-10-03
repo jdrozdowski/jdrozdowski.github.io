@@ -1705,6 +1705,8 @@ address {
       opacity: 1; }
     .l-project__link:hover ~ * .c-project-label__text {
       opacity: 1; }
+    .is-disabled .l-project__link {
+      cursor: not-allowed; }
   .l-project__img {
     position: relative;
     left: -40px;
@@ -1760,6 +1762,8 @@ address {
       bottom: 60px;
       padding-top: 20px;
       padding-bottom: 20px; } }
+  .is-disabled .c-project-label {
+    background-color: #dbdbdb; }
   @media (min-width: 1200px) {
     .l-project--reverse .c-project-label {
       right: 0;
@@ -1778,6 +1782,10 @@ address {
       display: inline-block;
       vertical-align: top;
       margin-left: 10px; }
+      .is-disabled .c-project-label__text::after {
+        display: none; }
+    .is-disabled .c-project-label__text {
+      color: #212121; }
 
 /* Contact section */
 .c-contact-title {

@@ -291,6 +291,10 @@
     &:hover  ~* .c-project-label__text {
       opacity: 1;
     }
+
+    .is-disabled & {
+      cursor: not-allowed;
+    }
   }
   
   &__img {
@@ -370,6 +374,10 @@
     padding-bottom: $space-m;
   }
 
+  .is-disabled & {
+    background-color: $grey;
+  }
+
   .l-project--reverse & {
     @include respond-to(huge) {
       right: 0;
@@ -395,6 +403,14 @@
       display: inline-block;
       vertical-align: top;
       margin-left: $space-s;
+
+      .is-disabled & {
+        display: none;
+      }
+    }
+
+    .is-disabled & {
+      color: $text-color;
     }
   }
 }
