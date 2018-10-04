@@ -760,7 +760,7 @@ address {
       border-top: 1px solid #dbdbdb; }
       @media (min-width: 768px) {
         .c-menu__item--bottom {
-          bottom: 120px; } }
+          bottom: 80px; } }
   .c-menu__link {
     position: relative;
     font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
@@ -770,9 +770,6 @@ address {
     @media (min-width: 768px) {
       .c-menu__link {
         font-size: 2.5rem; } }
-    @media (min-width: 1200px) {
-      .c-menu__link {
-        font-size: 3rem; } }
     .c-menu__link::after {
       content: '';
       position: absolute;

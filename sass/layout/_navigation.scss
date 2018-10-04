@@ -152,7 +152,7 @@
       border-top: 1px solid $grey;
 
       @include respond-to(medium) {
-        bottom: $space-xxl;
+        bottom: $space-l * 2;
       }
     }
   }
@@ -167,10 +167,6 @@
 
     @include respond-to(medium) {
       font-size: 2.5rem;
-    }
-
-    @include respond-to(huge) {
-      font-size: 3rem;
     }
 
     &::after {
