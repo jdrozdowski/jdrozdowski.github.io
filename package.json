@@ -1,0 +1,25 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio to demonstrate my skills as full-stack web developer.",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdrozdowski/p.git"
+  },
+  "author": "Jakub Drozdowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdrozdowski/p/issues"
+  },
+  "homepage": "https://github.com/jdrozdowski/p#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
