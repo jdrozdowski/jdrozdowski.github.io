@@ -1786,7 +1786,7 @@ address {
     line-height: 1;
     transition: opacity 300ms ease-in-out; }
     .c-project-label__text::after {
-      content: url("../images/icons/external-link.svg");
+      content: url("../src/images/icons/external-link.svg");
       display: inline-block;
       vertical-align: top;
       margin-left: 10px; }

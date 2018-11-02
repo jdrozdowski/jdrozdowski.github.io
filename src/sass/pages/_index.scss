@@ -398,7 +398,7 @@
     transition: opacity 300ms ease-in-out;
 
     &::after {
-      content: url('../images/icons/external-link.svg');
+      content: url('../src/images/icons/external-link.svg');
 
       display: inline-block;
       vertical-align: top;
